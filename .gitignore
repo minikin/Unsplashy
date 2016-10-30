@@ -1,5 +1,6 @@
 
 ## Various settings
+
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -70,3 +71,4 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+UnsplashKeys.plist

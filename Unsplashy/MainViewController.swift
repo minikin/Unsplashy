@@ -11,13 +11,18 @@ import Cocoa
 class MainViewController: NSViewController {
 	
 	@IBOutlet weak var collectionView: NSCollectionView!
+  
+  let dataRequest = UnsplashWebservice()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 			
 			configureCollectionView()
 			
-			print("MainView Controller Loaded")
+      
+      dataRequest.load(Photo.all){ result in
+        print(result)
+      }
 		
     }
 	

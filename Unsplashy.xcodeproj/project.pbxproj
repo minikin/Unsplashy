@@ -13,6 +13,11 @@
 		853508E81DBA05C800AD09B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853508E71DBA05C800AD09B3 /* MainViewController.swift */; };
 		853508EF1DBA085B00AD09B3 /* PhotoCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853508ED1DBA085B00AD09B3 /* PhotoCollectionViewItem.swift */; };
 		853508F01DBA085B00AD09B3 /* PhotoCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853508EE1DBA085B00AD09B3 /* PhotoCollectionViewItem.xib */; };
+		CE19A3651DC68F4D002768AE /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19A3641DC68F4D002768AE /* AuthorModel.swift */; };
+		CE19A3671DC68F64002768AE /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19A3661DC68F64002768AE /* PhotoModel.swift */; };
+		CE19A3691DC68FDF002768AE /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19A3681DC68FDF002768AE /* UnsplashAPI.swift */; };
+		CE19A36B1DC694AA002768AE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19A36A1DC694AA002768AE /* Networking.swift */; };
+		CE19A36D1DC69C9E002768AE /* UnsplashKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE19A36C1DC69C9E002768AE /* UnsplashKeys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		853508E71DBA05C800AD09B3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		853508ED1DBA085B00AD09B3 /* PhotoCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewItem.swift; sourceTree = "<group>"; };
 		853508EE1DBA085B00AD09B3 /* PhotoCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewItem.xib; sourceTree = "<group>"; };
+		CE19A3641DC68F4D002768AE /* AuthorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
+		CE19A3661DC68F64002768AE /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		CE19A3681DC68FDF002768AE /* UnsplashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		CE19A36A1DC694AA002768AE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CE19A36C1DC69C9E002768AE /* UnsplashKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UnsplashKeys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,8 @@
 		853508E31DBA011D00AD09B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE19A3641DC68F4D002768AE /* AuthorModel.swift */,
+				CE19A3661DC68F64002768AE /* PhotoModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -88,6 +100,7 @@
 			children = (
 				853508D31DB9FFB300AD09B3 /* AppDelegate.swift */,
 				853508DC1DB9FFB300AD09B3 /* Info.plist */,
+				CE19A36C1DC69C9E002768AE /* UnsplashKeys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +132,8 @@
 		853508EC1DBA081B00AD09B3 /* DataProviders */ = {
 			isa = PBXGroup;
 			children = (
+				CE19A3681DC68FDF002768AE /* UnsplashAPI.swift */,
+				CE19A36A1DC694AA002768AE /* Networking.swift */,
 			);
 			name = DataProviders;
 			sourceTree = "<group>";
@@ -150,7 +165,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Sasha Prokhorenko";
 				TargetAttributes = {
 					853508CF1DB9FFB200AD09B3 = {
@@ -185,6 +200,7 @@
 			files = (
 				853508D81DB9FFB300AD09B3 /* Assets.xcassets in Resources */,
 				853508DB1DB9FFB300AD09B3 /* Main.storyboard in Resources */,
+				CE19A36D1DC69C9E002768AE /* UnsplashKeys.plist in Resources */,
 				853508F01DBA085B00AD09B3 /* PhotoCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,9 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE19A3651DC68F4D002768AE /* AuthorModel.swift in Sources */,
 				853508E81DBA05C800AD09B3 /* MainViewController.swift in Sources */,
 				853508EF1DBA085B00AD09B3 /* PhotoCollectionViewItem.swift in Sources */,
+				CE19A3671DC68F64002768AE /* PhotoModel.swift in Sources */,
+				CE19A3691DC68FDF002768AE /* UnsplashAPI.swift in Sources */,
 				853508D41DB9FFB300AD09B3 /* AppDelegate.swift in Sources */,
+				CE19A36B1DC694AA002768AE /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +254,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -283,6 +304,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -353,6 +375,7 @@
 				853508E11DB9FFB300AD09B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
